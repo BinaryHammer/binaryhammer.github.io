@@ -15,6 +15,10 @@ a:link{
 	color: #eeeeee;
 }
 
+a:visited{
+	color: #eeeeee;
+}
+
 a:hover{
 	color: #ffffff;
 }
