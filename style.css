@@ -1,0 +1,95 @@
+/* Elements */
+
+html {
+	font-family: "Helvetica Neue";
+	background-color: #000000;
+}
+
+body{
+	font-size: 2vh; /* the visible text should be 1.6% of the height of the screen */
+	margin: 0; /* There is a default margin for the body */
+	color: #cccccc; /* text color */
+}
+
+a:link{
+	color: #eeeeee;
+}
+
+a:hover{
+	color: #ffffff;
+}
+
+h1{
+	font-size: 3.7vh;
+	line-height: 5vh;
+}
+
+/* Ids */
+
+#banner-div{
+	background-position: center center;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+}
+
+#logo{
+	height: 50vh;
+	margin-top: 15vh;
+}
+
+#name-h1{
+	font-size: 5vh;
+	line-height: 2vh;
+	letter-spacing: 0.2vw;
+	color: #eeeeee;
+}
+
+#scroll-down-div{
+	width: 3em;
+	border-radius: 2em;
+	font-size: 1em;
+	line-height: 3em;
+	text-align: center;
+	margin-top: 1em;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-color: #eeeeee;
+	color: #000000;
+}
+
+#scroll-down-div:hover{
+	background-color: #ffffff;
+}
+
+#main-content-div{
+	max-width: 60em;
+	margin-top: 1vh;
+	margin-right: auto;
+	margin-bottom: 1vh;
+	margin-left: auto;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+/* Size specific background image */
+
+@media only screen and (max-width: 480px) {
+	#banner-div {
+		background-image: url(background-small.png);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#banner-div {
+		background-image: url(background-medium.png);
+	}
+}
+
+@media only screen {
+	#banner-div {
+		background-image: url(background-big.png);
+	}
+}

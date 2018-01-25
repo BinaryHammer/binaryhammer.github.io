@@ -1,0 +1,122 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXFileReference section */
+		88FF5E0A201608AC009427B5 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		88FF5E0C201608AC009427B5 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		88FF5E0D201608AD009427B5 /* flat-shield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flat-shield.png"; sourceTree = "<group>"; };
+		88FF5E0E201608AD009427B5 /* apple-touch-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon.png"; sourceTree = "<group>"; };
+		88FF5E0F201608AD009427B5 /* javascript.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = javascript.js; sourceTree = "<group>"; };
+		88FF5E10201608AD009427B5 /* background-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-big.png"; sourceTree = "<group>"; };
+		88FF5E11201608AD009427B5 /* background-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-medium.png"; sourceTree = "<group>"; };
+		88FF5E12201608AD009427B5 /* background-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-small.png"; sourceTree = "<group>"; };
+		88FF5E14201608AD009427B5 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		88FF5E1820167678009427B5 /* web-fonts-with-css */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "web-fonts-with-css"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		88FF5E0320160872009427B5 = {
+			isa = PBXGroup;
+			children = (
+				88FF5E0E201608AD009427B5 /* apple-touch-icon.png */,
+				88FF5E11201608AD009427B5 /* background-medium.png */,
+				88FF5E12201608AD009427B5 /* background-small.png */,
+				88FF5E10201608AD009427B5 /* background-big.png */,
+				88FF5E0D201608AD009427B5 /* flat-shield.png */,
+				88FF5E0A201608AC009427B5 /* favicon.ico */,
+				88FF5E0C201608AC009427B5 /* index.html */,
+				88FF5E0F201608AD009427B5 /* javascript.js */,
+				88FF5E14201608AD009427B5 /* style.css */,
+				88FF5E1820167678009427B5 /* web-fonts-with-css */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		88FF5E1520160E93009427B5 /* OpenSafariTarget */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = index.html;
+			buildConfigurationList = 88FF5E1620160E93009427B5 /* Build configuration list for PBXLegacyTarget "OpenSafariTarget" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/open;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = OpenSafariTarget;
+			passBuildSettingsInEnvironment = 1;
+			productName = Website;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		88FF5E0420160872009427B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					88FF5E1520160E93009427B5 = {
+						CreatedOnToolsVersion = 9.2;
+					};
+				};
+			};
+			buildConfigurationList = 88FF5E0720160872009427B5 /* Build configuration list for PBXProject "Personal-Website" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 88FF5E0320160872009427B5;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88FF5E1520160E93009427B5 /* OpenSafariTarget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		88FF5E0820160872009427B5 /* Configuration */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Configuration;
+		};
+		88FF5E1720160E93009427B5 /* Configuration */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROJECT_PATH = $SRCROOT;
+			};
+			name = Configuration;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88FF5E0720160872009427B5 /* Build configuration list for PBXProject "Personal-Website" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FF5E0820160872009427B5 /* Configuration */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Configuration;
+		};
+		88FF5E1620160E93009427B5 /* Build configuration list for PBXLegacyTarget "OpenSafariTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FF5E1720160E93009427B5 /* Configuration */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Configuration;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88FF5E0420160872009427B5 /* Project object */;
+}
