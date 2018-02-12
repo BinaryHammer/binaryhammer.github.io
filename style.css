@@ -2,13 +2,17 @@
 
 html {
 	font-family: "Helvetica Neue";
-	background-color: #222222;
+	width: 100vw;
+	height: 100vh;
 }
 
 body{
 	font-size: 2vh; /* the visible text should be 1.6% of the height of the screen */
 	margin: 0; /* There is a default margin for the body */
 	color: #ffffff; /* text color */
+	width: 100vw;
+	height: 100vh;
+	background-color: #111111;
 }
 
 a:link{
@@ -30,16 +34,32 @@ h1{
 
 /* Ids */
 
-#banner-div{
-	background-position: center center;
-	background-size: cover;
+#background-wrap {
+	clip: rect(0, auto, auto, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100vw;
 	height: 100vh;
+}
+
+#banner-div{
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	transform: translateZ(0);
+	will-change: transform;
 	text-align: center;
 
-	box-shadow: -3px 16px 35px 1px rgba(0,0,0,1);
-
-background-attachment: fixed;
+	/* Show inset bottom */
+/*	-webkit-box-shadow: inset 0px -55px 26px -40px rgba(0,0,0,0.75);*/
+/*	-moz-box-shadow: inset 0px -55px 26px -40px rgba(0,0,0,0.75);*/
+/*	box-shadow: inset 0px -55px 26px -40px rgba(0,0,0,0.75);*/
 }
 
 #logo{
@@ -66,13 +86,38 @@ background-attachment: fixed;
 	margin-left: auto;
 	background-color: #eeeeee;
 	color: #000000;
+
+	/* Shadow outline bottom */
+/*	-webkit-box-shadow: 0px 27px 47px 3px rgba(0,0,0,0.75);*/
+/*	-moz-box-shadow: 0px 27px 47px 3px rgba(0,0,0,0.75);*/
+/*	box-shadow: 0px 27px 47px 3px rgba(0,0,0,0.75);*/
 }
 
 #scroll-down-div:hover{
 	background-color: #ffffff;
 }
 
+#first-section{
+	position: relative;;
+	width: 100vw;
+	height: 100vh;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#second-section{
+	/* Shadow outline top */
+	-webkit-box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);
+	box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);
+	width: 100vw;
+	height: 100vh;
+	margin-top: 0;
+	padding-top: 0;
+}
+
 #main-content-div{
+
 	max-width: 60em;
 	margin-top: 1vh;
 	margin-right: auto;
@@ -81,6 +126,8 @@ background-attachment: fixed;
 	padding-left: 1vw;
 	padding-right: 1vw;
 }
+
+//
 
 /* Size specific background image */
 
