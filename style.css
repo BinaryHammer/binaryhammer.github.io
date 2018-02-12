@@ -2,13 +2,13 @@
 
 html {
 	font-family: "Helvetica Neue";
-	background-color: #000000;
+	background-color: #222222;
 }
 
 body{
 	font-size: 2vh; /* the visible text should be 1.6% of the height of the screen */
 	margin: 0; /* There is a default margin for the body */
-	color: #cccccc; /* text color */
+	color: #ffffff; /* text color */
 }
 
 a:link{
@@ -36,6 +36,10 @@ h1{
 	width: 100vw;
 	height: 100vh;
 	text-align: center;
+
+	box-shadow: -3px 16px 35px 1px rgba(0,0,0,1);
+
+background-attachment: fixed;
 }
 
 #logo{
