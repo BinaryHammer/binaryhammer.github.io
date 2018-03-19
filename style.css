@@ -1,4 +1,4 @@
-/* Elements */
+/* Element selectors */
 
 html {
 	font-family: "Helvetica Neue";
@@ -6,35 +6,42 @@ html {
 	height: 100vh;
 }
 
-body{
+body {
 	font-size: 2vh; /* the visible text should be 1.6% of the height of the screen */
 	margin: 0; /* There is a default margin for the body */
 	color: #ffffff; /* text color */
 	width: 100vw;
-	height: 100vh;
-	background-color: #111111;
+	background-color: #333333;
 }
 
-a:link{
+a:link {
 	color: #eeeeee;
 }
 
-a:visited{
+a:visited {
 	color: #eeeeee;
 }
 
-a:hover{
+a:hover {
 	color: #ffffff;
 }
 
-h1{
+h1 {
 	font-size: 3.7vh;
 	line-height: 5vh;
 }
 
-/* Ids */
+/* Id selectors */
 
-#background-wrap {
+#top-div {
+	position: relative;;
+	width: 100vw;
+	height: 100vh;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#background-wrap-div {
 	clip: rect(0, auto, auto, 0);
 	position: absolute;
 	top: 0;
@@ -43,7 +50,7 @@ h1{
 	height: 100vh;
 }
 
-#banner-div{
+#banner-div {
 	position: fixed;
 	display: block;
 	top: 0;
@@ -55,26 +62,21 @@ h1{
 	transform: translateZ(0);
 	will-change: transform;
 	text-align: center;
-
-	/* Show inset bottom */
-/*	-webkit-box-shadow: inset 0px -55px 26px -40px rgba(0,0,0,0.75);*/
-/*	-moz-box-shadow: inset 0px -55px 26px -40px rgba(0,0,0,0.75);*/
-/*	box-shadow: inset 0px -55px 26px -40px rgba(0,0,0,0.75);*/
 }
 
-#logo{
+#logo {
 	height: 50vh;
 	margin-top: 15vh;
 }
 
-#name-h1{
+#name-h1 {
 	font-size: 5vh;
 	line-height: 2vh;
 	letter-spacing: 0.2vw;
 	color: #eeeeee;
 }
 
-#scroll-down-div{
+#scroll-down-div {
 	width: 3em;
 	border-radius: 2em;
 	font-size: 1em;
@@ -86,49 +88,52 @@ h1{
 	margin-left: auto;
 	background-color: #eeeeee;
 	color: #000000;
-
-	/* Shadow outline bottom */
-/*	-webkit-box-shadow: 0px 27px 47px 3px rgba(0,0,0,0.75);*/
-/*	-moz-box-shadow: 0px 27px 47px 3px rgba(0,0,0,0.75);*/
-/*	box-shadow: 0px 27px 47px 3px rgba(0,0,0,0.75);*/
 }
 
-#scroll-down-div:hover{
+#scroll-down-div:hover {
 	background-color: #ffffff;
 }
 
-#first-section{
-	position: relative;;
-	width: 100vw;
-	height: 100vh;
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
-
-#second-section{
-	/* Shadow outline top */
-	-webkit-box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);
-	box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);
-	width: 100vw;
-	height: 100vh;
-	margin-top: 0;
-	padding-top: 0;
-}
-
-#main-content-div{
-
+#main-content-div {
 	max-width: 60em;
-	margin-top: 1vh;
+
+	margin-top: 0vh;
+	margin-bottom: 0vh;
 	margin-right: auto;
-	margin-bottom: 1vh;
 	margin-left: auto;
+
 	padding-left: 1vw;
 	padding-right: 1vw;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
 }
 
-//
+#section {
+	background-color: #111111;
+	border-radius: 10px;
 
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	padding-top: 0vh;
+	padding-bottom: 0.01vh;
+
+	/* Shadow outline top */
+	/*	-webkit-box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);*/
+	/*	-moz-box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);*/
+	/*	box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);*/
+
+	/* Shadow outline bottom */
+		-webkit-box-shadow: 0px 27px 47px 3px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 27px 47px 3px rgba(0,0,0,0.75);
+		box-shadow: 0px 27px 47px 3px rgba(0,0,0,0.75);
+
+	/* Show inset bottom */
+	/*	-webkit-box-shadow: inset 0px -55px 26px -40px rgba(0,0,0,0.75);*/
+	/*	-moz-box-shadow: inset 0px -55px 26px -40px rgba(0,0,0,0.75);*/
+	/*	box-shadow: inset 0px -55px 26px -40px rgba(0,0,0,0.75);*/
+}
+
+/* Media queries */
 /* Size specific background image */
 
 @media only screen and (max-width: 480px) {
