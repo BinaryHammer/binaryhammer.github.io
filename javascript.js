@@ -24,7 +24,15 @@ function currentYPosition() {
 }
 
 function elementYPosition(elementID) {
+	if (typeof elementID !== "string") {
+		return
+	}
+	
 	const element = document.getElementById(elementID)
+	if (element === null) {
+		return
+	}
+
 	let y = element.offsetTop
 	let node = element
 
@@ -37,6 +45,10 @@ function elementYPosition(elementID) {
 }
 
 function smoothScroll(elementID) {
+	if (typeof elementID !== "string") {
+		return
+	}
+	
 	const startY = currentYPosition()
 	const stopY = elementYPosition(elementID)
 	const distance = stopY > startY ? stopY - startY : startY - stopY
