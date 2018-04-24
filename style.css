@@ -31,6 +31,10 @@ h1 {
 	line-height: 5vh;
 }
 
+td {
+	padding-bottom: 2vh;
+}
+
 /* Id selectors */
 
 #top-div {
@@ -134,6 +138,12 @@ h1 {
 /*	-webkit-box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.75); /* hor vert blur spread color */*/
 /*	-moz-box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.75);*/
 /*	box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.75);*/
+}
+
+.nowrap-td {
+	white-space: nowrap;
+	padding-right: 0.3vw;
+	vertical-align: text-top;
 }
 
 /* Media queries */
