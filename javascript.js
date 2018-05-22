@@ -1,3 +1,5 @@
+"use strict";
+
 function scrollToMainContent() {
 	const currentY = currentYPosition()
 //	console.log(currentY)
