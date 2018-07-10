@@ -50,7 +50,7 @@
 			dependencies = (
 			);
 			name = OpenSafariTarget;
-			passBuildSettingsInEnvironment = 1;
+			passBuildSettingsInEnvironment = 0;
 			productName = Website;
 		};
 /* End PBXLegacyTarget section */
@@ -71,7 +71,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 			);
 			mainGroup = 88FF5E0320160872009427B5;
 			projectDirPath = "";
@@ -83,45 +82,17 @@
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		88FF5E0820160872009427B5 /* Configuration */ = {
+		88FF5E0820160872009427B5 /* OpenSafariConfiguration */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
-			name = Configuration;
+			name = OpenSafariConfiguration;
 		};
-		88FF5E1720160E93009427B5 /* Configuration */ = {
+		88FF5E1720160E93009427B5 /* OpenSafariConfiguration */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROJECT_PATH = $SRCROOT;
 			};
-			name = Configuration;
+			name = OpenSafariConfiguration;
 		};
 /* End XCBuildConfiguration section */
 
@@ -129,18 +100,18 @@
 		88FF5E0720160872009427B5 /* Build configuration list for PBXProject "Personal-Website" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88FF5E0820160872009427B5 /* Configuration */,
+				88FF5E0820160872009427B5 /* OpenSafariConfiguration */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Configuration;
+			defaultConfigurationName = OpenSafariConfiguration;
 		};
 		88FF5E1620160E93009427B5 /* Build configuration list for PBXLegacyTarget "OpenSafariTarget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88FF5E1720160E93009427B5 /* Configuration */,
+				88FF5E1720160E93009427B5 /* OpenSafariConfiguration */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Configuration;
+			defaultConfigurationName = OpenSafariConfiguration;
 		};
 /* End XCConfigurationList section */
 	};
