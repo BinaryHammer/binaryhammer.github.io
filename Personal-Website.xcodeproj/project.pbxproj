@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		819456552126E03300311A97 /* font-awesome-with-css */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "font-awesome-with-css"; sourceTree = "<group>"; };
 		88FF5E0A201608AC009427B5 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
 		88FF5E0C201608AC009427B5 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		88FF5E0D201608AD009427B5 /* flat-shield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flat-shield.png"; sourceTree = "<group>"; };
@@ -16,7 +17,6 @@
 		88FF5E11201608AD009427B5 /* background-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-medium.png"; sourceTree = "<group>"; };
 		88FF5E12201608AD009427B5 /* background-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-small.png"; sourceTree = "<group>"; };
 		88FF5E14201608AD009427B5 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
-		88FF5E1820167678009427B5 /* web-fonts-with-css */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "web-fonts-with-css"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -32,7 +32,7 @@
 				88FF5E0C201608AC009427B5 /* index.html */,
 				88FF5E0F201608AD009427B5 /* javascript.js */,
 				88FF5E14201608AD009427B5 /* style.css */,
-				88FF5E1820167678009427B5 /* web-fonts-with-css */,
+				819456552126E03300311A97 /* font-awesome-with-css */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +59,7 @@
 		88FF5E0420160872009427B5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 				TargetAttributes = {
 					88FF5E1520160E93009427B5 = {
 						CreatedOnToolsVersion = 9.2;
@@ -70,8 +70,6 @@
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
-			knownRegions = (
-			);
 			mainGroup = 88FF5E0320160872009427B5;
 			projectDirPath = "";
 			projectRoot = "";
@@ -91,6 +89,7 @@
 		88FF5E1720160E93009427B5 /* OpenSafariConfiguration */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = OpenSafariConfiguration;
 		};

@@ -1,7 +1,33 @@
+/* Fonts */
+
+@font-face {
+	font-family: TexGyreHeros;
+	src: url("font-tex-gyre-heros/texgyreheros-regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: TexGyreHeros;
+	font-weight: bold;
+	src: url("font-tex-gyre-heros/texgyreheros-bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: TexGyreHeros;
+	font-style: italic;
+	src: url("font-tex-gyre-heros/texgyreheros-italic.otf") format("opentype")
+}
+
+@font-face {
+	font-family: TexGyreHeros;
+	font-style: italic;
+	font-weight: bold;
+	src: url("font-tex-gyre-heros/texgyreheros-bolditalic.otf") format("opentype")
+}
+
 /* Element selectors */
 
 html {
-	font-family: "Helvetica Neue";
+	font-family: "TexGyreHeros";
 	width: 100vw;
 	height: 100vh;
 }
