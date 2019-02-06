@@ -33,7 +33,7 @@ html {
 }
 
 body {
-	font-size: 2vh; /* the visible text should be 1.6% of the height of the screen */
+	font-size: 2vh; /* the visible text should be % of the height of the screen */
 	margin: 0; /* There is a default margin for the body */
 	color: #ffffff; /* text color */
 	width: 100vw;
@@ -63,7 +63,7 @@ td {
 
 /* Id selectors */
 
-#top-div {
+#header-div {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
@@ -140,6 +140,13 @@ td {
 /*	-webkit-box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);*/
 /*	-moz-box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);*/
 /*	box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);*/
+}
+
+#footer-div {
+	font-size: 1vh; /* the visible text should be % of the height of the screen */
+	color: #aaaaaa; /* text color */
+	font-style: italic;
+	padding-bottom: 1vh;
 }
 
 /* Class selectors */
