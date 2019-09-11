@@ -1,67 +1,4 @@
-/* Fonts */
-
-@font-face {
-	font-family: TexGyreHeros;
-	src: url("../font-inter/Inter-Regular.otf") format("opentype");
-}
-
-@font-face {
-	font-family: TexGyreHeros;
-	font-weight: bold;
-	src: url("../font-inter/Inter-Bold.otf") format("opentype");
-}
-
-@font-face {
-	font-family: TexGyreHeros;
-	font-style: italic;
-	src: url("../font-inter/Inter-Italic.otf") format("opentype")
-}
-
-@font-face {
-	font-family: TexGyreHeros;
-	font-style: italic;
-	font-weight: bold;
-	src: url("../font-inter/Inter-BoldItalic.otf") format("opentype")
-}
-
-/* Element selectors */
-
-html {
-	font-family: "TexGyreHeros";
-	width: 100vw;
-	height: 100vh;
-}
-
-body {
-	font-size: 2vh; /* the visible text should be % of the height of the screen */
-	margin: 0; /* There is a default margin for the body */
-	color: #ffffff; /* text color */
-	width: 100vw;
-	background-color: #333333;
-}
-
-a:link {
-	color: #eeeeee;
-}
-
-a:visited {
-	color: #eeeeee;
-}
-
-a:hover {
-	color: #ffffff;
-}
-
-h1 {
-	font-size: 3.7vh;
-	line-height: 5vh;
-}
-
-td {
-	padding-bottom: 2vh;
-}
-
-/* Id selectors */
+/* ID SELECTORS */
 
 #header-div {
 	position: relative;
@@ -106,10 +43,7 @@ td {
 	font-size: 1em;
 	line-height: 3em;
 	text-align: center;
-	margin-top: 1em;
-	margin-right: auto;
-	margin-bottom: 0;
-	margin-left: auto;
+	margin: 1em auto 0; /* top, (right & left), bottom) */
 	background-color: #eeeeee;
 	color: #000000;
 }
@@ -125,16 +59,8 @@ td {
 
 #main-content-div {
 	max-width: 60em;
-
-	margin-top: 0vh;
-	margin-bottom: 0vh;
-	margin-right: auto;
-	margin-left: auto;
-
-	padding-left: 1vw;
-	padding-right: 1vw;
-	padding-top: 1vh;
-	padding-bottom: 1vh;
+	margin: 0 auto; /* (top vh implicit & bottom vh implicit), (left & right) */
+	padding: 1vh 1vw; /* (top & bottom), (left & right) */
 
 	/* Shadow outline top */
 /*	-webkit-box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);*/
@@ -147,28 +73,21 @@ td {
 	color: #aaaaaa; /* text color */
 	font-style: italic;
 	padding-bottom: 1vh;
+	text-align: center;
 }
 
-/* Class selectors */
+/* CLASS SELECTORS */
 
 .section {
 	background-color: #222222;
 	border: 0.3vh solid #ffffff;
 /*	border-radius: 10px;*/
 
-	margin-left: 0;
-	margin-right: 0;
-	margin-top: 0.8vh;
-	margin-bottom: 1vh;
-
-	padding-left: 2vw;
-	padding-right: 2vw;
-	padding-top: 0vh;
-	padding-bottom: 1vh;
-
+	margin: 0.8vh 0 1vh; /* top, (right vw implicit & left vw implicit), bottom */
+	padding: 0 2vw 1vh; /* top vh is implicit, (right & left), bottom */
 
 	/* Shadow outline bottom */
-/*	-webkit-box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.75); /* hor vert blur spread color */*/
+/*	-webkit-box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.75); */
 /*	-moz-box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.75);*/
 /*	box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.75);*/
 }
@@ -179,23 +98,88 @@ td {
 	vertical-align: text-top;
 }
 
+/* ELEMENT SELECTORS */
+
+html {
+	font-family: "TexGyreHeros", sans-serif;
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	font-size: 2vh; /* the visible text should be % of the height of the screen */
+	margin: 0; /* There is a default margin for the body */
+	color: #ffffff; /* text color */
+	width: 100vw;
+	background-color: #333333;
+}
+
+a:link {
+	color: #eeeeee;
+}
+
+a:visited {
+	color: #eeeeee;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+h1 {
+	font-size: 3.7vh;
+	line-height: 5vh;
+}
+
+td {
+	padding-bottom: 2vh;
+}
+
+/* QUERIES */
+
+/* Font */
+
+@font-face {
+	font-family: TexGyreHeros;
+	src: url("font-inter/Inter-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: TexGyreHeros;
+	font-weight: bold;
+	src: url("font-inter/Inter-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: TexGyreHeros;
+	font-style: italic;
+	src: url("font-inter/Inter-Italic.otf") format("opentype")
+}
+
+@font-face {
+	font-family: TexGyreHeros;
+	font-style: italic;
+	font-weight: bold;
+	src: url("font-inter/Inter-BoldItalic.otf") format("opentype")
+}
+
 /* Media queries */
 /* Size specific background image */
 
 @media only screen and (max-width: 480px) {
 	#banner-div {
-		background-image: url(../images/background-small.png);
+		background-image: url(images/background-small.png);
 	}
 }
 
 @media only screen and (max-width: 768px) {
 	#banner-div {
-		background-image: url(../images/background-medium.png);
+		background-image: url(images/background-medium.png);
 	}
 }
 
 @media only screen {
 	#banner-div {
-		background-image: url(../images/background-big.png);
+		background-image: url(images/background-big.png);
 	}
 }
