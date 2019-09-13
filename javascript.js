@@ -1,5 +1,90 @@
 "use strict";
 
+// TYPE DECLARATIONS
+
+let sizeEnum = {
+	small: "small",
+	medium: "medium",
+	large: "large"
+};
+
+// VARIABLE DECLARATIONS
+
+// Change image variables
+
+let size = "small";
+let imageIndex = 2;
+let mediaQuerySmall = window.matchMedia("only screen and (max-width: 640px)");
+let mediaQueryMedium = window.matchMedia("only screen and (min-width:641px) and (max-width: 1080px)");
+let mediaQueryLarge = window.matchMedia("only screen and (min-width: 1081px)");
+
+// FUNCTION DECLARATIONS
+
+// Change image functions
+
+function init() {
+	// Run the Callbacks once so that one of the background images will be the first to initialize
+	matchMediaSmallCallback(mediaQuerySmall);
+	matchMediaMediumCallback(mediaQueryMedium);
+	matchMediaLargeCallback(mediaQueryLarge);
+
+	// Add listener, so if the size of the document changes so that queries are disabled/enabled it will call the corresponding callback
+	mediaQuerySmall.addListener(matchMediaSmallCallback);
+	mediaQueryMedium.addListener(matchMediaMediumCallback);
+	mediaQueryLarge.addListener(matchMediaLargeCallback);
+
+	// Start carousel of switching images
+	carousel();
+}
+
+function carousel() {
+	imageIndex = (imageIndex % 2) + 1;
+	loadImage();
+	setTimeout(carousel, 15000);
+}
+
+function matchMediaSmallCallback(event) {
+	// Will be called in event of that it matches and once after it matched when it does not match anymore
+	// The event should be the mediaquery variable
+	if (event.matches) {
+		// console.log("Media query small matches");
+		size = sizeEnum.small;
+		loadImage();
+	}
+}
+
+function matchMediaMediumCallback(event) {
+	// Will be called in event of that it matches and once after it matched when it does not match anymore
+	// The event should be the mediaquery variable
+	if (event.matches) {
+		// console.log("Media query medium matches");
+		size = sizeEnum.medium;
+		loadImage();
+	}
+}
+
+
+function matchMediaLargeCallback(event) {
+	// Will be called in event of that it matches and once after it matched when it does not match anymore
+	// The event should be the mediaquery variable
+	if (event.matches) {
+		// console.log("Media query large matches");
+		size = sizeEnum.large;
+		loadImage();
+	}
+}
+
+function loadImage() {
+	let imagePrefix = "background";
+	let imageSuffix = ".png";
+	let imageFilename = imagePrefix + imageIndex + "-" + size + imageSuffix;
+	let imagePath = "images/" + imageFilename;
+	// console.log("Image path: " + imagePath);
+	document.getElementById("banner-div").style.backgroundImage = "url(" + imagePath + ")";
+}
+
+// Scroll down functions
+
 function scrollToMainContent() {
 	const currentY = currentYPosition();
 //	console.log(currentY)

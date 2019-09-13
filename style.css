@@ -162,24 +162,3 @@ td {
 	font-weight: bold;
 	src: url("font-inter/Inter-BoldItalic.otf") format("opentype")
 }
-
-/* Media queries */
-/* Size specific background image */
-
-@media only screen and (max-width: 480px) {
-	#banner-div {
-		background-image: url(images/background-small.png);
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	#banner-div {
-		background-image: url(images/background-medium.png);
-	}
-}
-
-@media only screen {
-	#banner-div {
-		background-image: url(images/background-big.png);
-	}
-}
