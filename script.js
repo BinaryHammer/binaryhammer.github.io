@@ -22,7 +22,7 @@ let mediaQueryLarge = window.matchMedia("only screen and (min-width: 1081px)");
 
 // Change image functions
 
-function init() {
+function initializeWebsite() {
 	// Run the Callbacks once so that one of the background images will be the first to initialize
 	matchMediaSmallCallback(mediaQuerySmall);
 	matchMediaMediumCallback(mediaQueryMedium);
@@ -35,6 +35,11 @@ function init() {
 
 	// Start carousel of switching images
 	carousel();
+	
+	
+	initSlides();
+	initSlideshow();
+	
 }
 
 function carousel() {
@@ -62,7 +67,6 @@ function matchMediaMediumCallback(event) {
 		loadImage();
 	}
 }
-
 
 function matchMediaLargeCallback(event) {
 	// Will be called in event of that it matches and once after it matched when it does not match anymore
