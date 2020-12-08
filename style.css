@@ -28,18 +28,23 @@
 }
 
 #logo {
+	position: relative;
 	height: 50vh;
 	margin-top: 15vh;
+	animation:fade-in-from-top-move 1s ease-out forwards;
 }
 
 #name-h1 {
+	position: relative;
 	font-size: 5vh;
 	line-height: 2vh;
 	letter-spacing: 0.2vw;
 	color: #eeeeee;
+	animation:fade-in-from-bottom-move 1s ease-out forwards;
 }
 
 #scroll-down-div {
+	position: relative;
 	width: 3em;
 	border-radius: 2em;
 	font-size: 1em;
@@ -48,6 +53,7 @@
 	margin: 1em auto 0; /* top, (right & left), bottom) */
 	background-color: #eeeeee;
 	color: #000000;
+	animation:fade-in-from-bottom-move 1s ease-out forwards;
 }
 
 #scroll-down-div:hover {
@@ -60,9 +66,6 @@
 	
 	height: 100vh;
 	width: 100vw;
-	/* overflow: hidden; */
-	/* position: relative; */
-	/* background-color: red; */
 	z-index: -1;
 }
 
@@ -124,9 +127,10 @@
 /* CLASS SELECTORS */
 
 .section {
+	position: relative;
 	background-color: #222222;
 	border: 0.3vh solid #ffffff;
-/*	border-radius: 10px;*/
+	border-radius: 10px;
 
 	margin: 0.8vh 0 1vh; /* top, (right vw implicit & left vw implicit), bottom */
 	padding: 0 2vw 1vh; /* top vh is implicit, (right & left), bottom */
@@ -206,4 +210,28 @@ td {
 	font-style: italic;
 	font-weight: bold;
 	src: url("font-inter/Inter-BoldItalic.otf") format("opentype")
+}
+
+/* KEYFRAMES */
+
+@keyframes fade-in-from-top-move {
+	from {
+		top:-50px;
+		opacity: 0;
+	}
+	to {
+		top:0px;
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in-from-bottom-move {
+	from {
+		top:50px;
+		opacity: 0;
+	}
+	to {
+		top:0px;
+		opacity: 1;
+	}
 }

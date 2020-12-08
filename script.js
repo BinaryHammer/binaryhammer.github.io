@@ -12,7 +12,6 @@ let oldImgElem = undefined
 let newImgElem = undefined
 let carousel = undefined
 
-
 // FUNCTION DECLARATIONS
 
 function initializeWebsite() {
