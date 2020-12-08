@@ -1,92 +1,78 @@
 "use strict";
 
-// TYPE DECLARATIONS
-
-let sizeEnum = {
-	small: "small",
-	medium: "medium",
-	large: "large"
-};
-
 // VARIABLE DECLARATIONS
 
-// Change image variables
+// Carousel variables
 
-let size = "small";
-let imageIndex = 2;
-let mediaQuerySmall = window.matchMedia("only screen and (max-width: 640px)");
-let mediaQueryMedium = window.matchMedia("only screen and (min-width:641px) and (max-width: 1080px)");
-let mediaQueryLarge = window.matchMedia("only screen and (min-width: 1081px)");
+const imageDisplayTime = 15000
+let imgElements = undefined
+let imagesLoaded = undefined
+let currentIndex = undefined
+let oldImgElem = undefined
+let newImgElem = undefined
+let carousel = undefined
+
 
 // FUNCTION DECLARATIONS
 
-// Change image functions
-
 function initializeWebsite() {
-	// Run the Callbacks once so that one of the background images will be the first to initialize
-	matchMediaSmallCallback(mediaQuerySmall);
-	matchMediaMediumCallback(mediaQueryMedium);
-	matchMediaLargeCallback(mediaQueryLarge);
-
-	// Add listener, so if the size of the document changes so that queries are disabled/enabled it will call the corresponding callback
-	mediaQuerySmall.addListener(matchMediaSmallCallback);
-	mediaQueryMedium.addListener(matchMediaMediumCallback);
-	mediaQueryLarge.addListener(matchMediaLargeCallback);
-
-	// Start carousel of switching images
-	carousel();
+	// Init images
+	// Set attribute with index on each image to access them easier
+	const carouselDiv = document.getElementById("carousel-div")
+	imgElements = carouselDiv.children
 	
+	// Init carousel
+	imagesLoaded = 0
+	currentIndex = 0
 	
-	initSlides();
-	initSlideshow();
+	setNewImage()
 	
-}
-
-function carousel() {
-	imageIndex = (imageIndex % 2) + 1;
-	loadImage();
-	setTimeout(carousel, 15000);
-}
-
-function matchMediaSmallCallback(event) {
-	// Will be called in event of that it matches and once after it matched when it does not match anymore
-	// The event should be the mediaquery variable
-	if (event.matches) {
-		// console.log("Media query small matches");
-		size = sizeEnum.small;
-		loadImage();
+	// Wait for the images to be loaded
+	for (const imgElem of imgElements) {
+		imgElem.onload = callbackImageLoaded()
 	}
 }
 
-function matchMediaMediumCallback(event) {
-	// Will be called in event of that it matches and once after it matched when it does not match anymore
-	// The event should be the mediaquery variable
-	if (event.matches) {
-		// console.log("Media query medium matches");
-		size = sizeEnum.medium;
-		loadImage();
+// Carousel functions
+
+function callbackImageLoaded() {
+	imagesLoaded = imagesLoaded + 1
+	
+	// If all images are loaded, start carousel
+	if (imagesLoaded >= imgElements.length) {
+		carousel = window.setInterval(() => { performTransition() }, imageDisplayTime)
 	}
 }
 
-function matchMediaLargeCallback(event) {
-	// Will be called in event of that it matches and once after it matched when it does not match anymore
-	// The event should be the mediaquery variable
-	if (event.matches) {
-		// console.log("Media query large matches");
-		size = sizeEnum.large;
-		loadImage();
+function performTransition() {
+	// Unset old image
+	if (oldImgElem) {
+		oldImgElem.classList.remove("old")
+		oldImgElem.classList.remove("fade-out")
 	}
+	// New image is now the old image
+	newImgElem.classList.remove("new")
+	oldImgElem = newImgElem
+	newImgElem = undefined
+	oldImgElem.classList.add("old")
+	
+	// Index is updated
+	currentIndex++;
+	if (currentIndex >= imgElements.length) {
+		currentIndex = 0 // Begin from the start
+	}
+	
+	setNewImage()
+	
+	// Fade out old image, which sits on top of the new image
+	oldImgElem.classList.add("fade-out")
 }
 
-function loadImage() {
-	let imagePrefix = "background";
-	let imageSuffix = ".png";
-	let imageFilename = imagePrefix + imageIndex + "-" + size + imageSuffix;
-	let imagePath = "images/" + imageFilename;
-	// console.log("Image path: " + imagePath);
-	document.getElementById("banner-div").style.backgroundImage = "url(" + imagePath + ")";
+function setNewImage() {
+	newImgElem = imgElements[currentIndex]
+	newImgElem.classList.add("new")
 }
-
+	
 // Scroll down functions
 
 function scrollToMainContent() {

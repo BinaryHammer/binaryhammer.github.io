@@ -23,6 +23,8 @@
 	transform: translateZ(0);
 	will-change: transform;
 	text-align: center;
+	
+	/* background-color: blue; */
 }
 
 #logo {
@@ -50,6 +52,49 @@
 
 #scroll-down-div:hover {
 	background-color: #ffffff;
+}
+
+#carousel-div {
+	position: fixed;
+	top: 0;
+	
+	height: 100vh;
+	width: 100vw;
+	/* overflow: hidden; */
+	/* position: relative; */
+	/* background-color: red; */
+	z-index: -1;
+}
+
+#carousel-div img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	
+	height: 100%;
+	width: 100%;
+	
+	object-fit: cover;
+	object-position: center;
+	
+	opacity: 0;
+}
+
+#carousel-div img.new {
+	z-index: 1;
+	opacity: 1;
+}
+
+#carousel-div img.old {
+	z-index: 2;
+	opacity: 1;
+}
+
+#carousel-div img.fade-out {
+	opacity: 0;
+	transition: visibility 0s 1s, opacity 1s linear;
+	visibility: hidden;
 }
 
 #separator-hr {
