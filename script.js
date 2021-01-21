@@ -4,10 +4,10 @@
 
 // Carousel variables
 
-const imageDisplayTime = 15000
+const imageDisplayTime = 4000
+let imagesLoadedCount = 0
+let currentIndex = 0
 let imgElements = undefined
-let imagesLoaded = undefined
-let currentIndex = undefined
 let oldImgElem = undefined
 let newImgElem = undefined
 let carousel = undefined
@@ -21,12 +21,10 @@ function initializeWebsite() {
 	imgElements = carouselDiv.children
 	
 	// Init carousel
-	imagesLoaded = 0
-	currentIndex = 0
-	
 	setNewImage()
 	
-	// Wait for the images to be loaded
+	// Add callback for every image when it is loaded
+	imgElements[0].classList.add("fade-in")
 	for (const imgElem of imgElements) {
 		imgElem.onload = callbackImageLoaded()
 	}
@@ -35,21 +33,25 @@ function initializeWebsite() {
 // Carousel functions
 
 function callbackImageLoaded() {
-	imagesLoaded = imagesLoaded + 1
+	imagesLoadedCount = imagesLoadedCount + 1
 	
 	// If all images are loaded, start carousel
-	if (imagesLoaded >= imgElements.length) {
+	if (imagesLoadedCount == imgElements.length) {
 		carousel = window.setInterval(() => { performTransition() }, imageDisplayTime)
 	}
 }
 
 function performTransition() {
+	// For first load the first image has fadeing in effect, remove it
+	newImgElem.classList.remove("fade-in")
+	
 	// Unset old image
-	if (oldImgElem) {
+	if (oldImgElem !== undefined) {
 		oldImgElem.classList.remove("old")
 		oldImgElem.classList.remove("fade-out")
 	}
-	// New image is now the old image
+	
+	// "new" image will be set to be the "old" image
 	newImgElem.classList.remove("new")
 	oldImgElem = newImgElem
 	newImgElem = undefined
