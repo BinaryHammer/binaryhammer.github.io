@@ -4,7 +4,7 @@
 
 // Carousel variables
 
-const imageDisplayTime = 4000
+const imageDisplayTime = 10000
 let imagesLoadedCount = 0
 let currentIndex = 0
 let imgElements = undefined
