@@ -1,30 +1,17 @@
 /* ID SELECTORS */
 
 #header-div {
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-}
-
-#background-clipped-div {
 	position: absolute;
-	clip: rect(0, auto, auto, 0);
- 	width: 100vw;
- 	height: 100vh;
-}
-
-#banner-div {
-	position: fixed;
-	display: block;
 	width: 100vw;
 	height: 100vh;
-	background-size: cover;
-	background-position: center center;
-	transform: translateZ(0);
-	will-change: transform;
 	text-align: center;
-	
-	/* background-color: blue; */
+	top: 0px;
+	left: 0px;
+}
+
+#center {
+	position: sticky;
+	top: 0px;
 }
 
 #logo {
@@ -70,7 +57,7 @@
 }
 
 #carousel-div img {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: -1;
@@ -106,50 +93,39 @@
 	visibility: hidden;
 }
 
-#separator-hr {
-	margin: 0 0 0 0;
-	background-color: #000000;
-}
-
 #main-content-div {
-	max-width: 60em;
-	margin: 0 auto; /* (top vh implicit & bottom vh implicit), (left & right) */
-	padding: 1vh 1vw; /* (top & bottom), (left & right) */
-
-	/* Shadow outline top */
-/*	-webkit-box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);*/
-/*	-moz-box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);*/
-/*	box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);*/
+	background: #111111;
+	width: 100vw;
+	border-top: 3px solid #ffffff;
+	margin: 100vh 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	box-shadow: 0px -21px 47px 3px rgba(0,0,0,0.75);
 }
 
 #footer-div {
 	font-size: 1vh; /* the visible text should be % of the height of the screen */
-	color: #aaaaaa; /* text color */
+	color: #aaaaaa;
+	background: #111111;
 	font-style: italic;
-	padding-bottom: 1vh;
+	padding: 2vh 0px 1vh 0px;
 	text-align: center;
 }
 
 /* CLASS SELECTORS */
 
 .section {
-	position: relative;
-	background-color: #222222;
-	border: 0.3vh solid #ffffff;
+	background: #222222;
+	width: 75.5vw;
+	margin: 2.5vh 10vw 0px 10vw;
+	padding: 0 2vw 0px 2vw;
+	border: 0.25vw solid #ffffff;
 	border-radius: 10px;
-
-	margin: 0.8vh 0 1vh; /* top, (right vw implicit & left vw implicit), bottom */
-	padding: 0 2vw 1vh; /* top vh is implicit, (right & left), bottom */
-
-	/* Shadow outline bottom */
-/*	-webkit-box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.75); */
-/*	-moz-box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.75);*/
-/*	box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.75);*/
+	box-shadow: 0px 6px 6px 0px rgba(255, 255, 255, 0.25);
 }
 
 .nowrap-td {
 	white-space: nowrap;
-	padding-right: 0.3vw;
+	padding-right: 10px;
 	vertical-align: text-top;
 }
 
@@ -157,16 +133,13 @@
 
 html {
 	font-family: "TexGyreHeros", sans-serif;
-	width: 100vw;
-	height: 100vh;
+	background: #111111;
 }
 
 body {
-	font-size: 2vh; /* the visible text should be % of the height of the screen */
-	margin: 0; /* There is a default margin for the body */
-	color: #ffffff; /* text color */
-	width: 100vw;
-	background-color: #333333;
+	font-size: 2vh;
+	margin: 0px 0px 0px 0px;
+	color: #ffffff;
 }
 
 a:link {

@@ -1,338 +1,336 @@
 <!doctype html>
 
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="This is the homepage of Nikolaj Troels Graf von Malotky." />
-		<meta name="robots" content="index, nofollow" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
-		<!-- FavIcon -->
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="This is the homepage of Nikolaj Troels Graf von Malotky." />
+	<meta name="robots" content="index, nofollow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
-		<!-- Font Awesome v5.2.0 CSS -->
-		<link href="font-awesome/css/fontawesome.css" rel="stylesheet" />
-		<link href="font-awesome/css/solid.css" rel="stylesheet" /> <!-- Only needed for solid icons -->
+	<!-- FavIcon -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+	<!-- Font Awesome v5.2.0 CSS -->
+	<link href="font-awesome/css/fontawesome.css" rel="stylesheet" />
+	<link href="font-awesome/css/solid.css" rel="stylesheet" /> <!-- Only needed for solid icons -->
 
-		<!-- My javascript file -->
-		<script type="text/javascript" src="script.js"></script>
-		
-		<title>Homepage of Graf von Malotky</title>
-	</head>
-	
-	<body onload="initializeWebsite()">
-		<!-- Header area -->
- 		<div id="header-div">
- 			<div id="background-clipped-div">
- 				<div id="banner-div">
- 					<img id="logo" src="images/emblem-white.png" alt="Stylized family emblem"/>
- 					<h1 id="name-h1">Graf von Malotky</h1>
- 					<div id="scroll-down-div" class="fade-in" onclick="scrollToMainContent()">
- 						<i class="fas fa-angle-down"></i>
- 					</div>
-					<div id="carousel-div">
-						<img srcset="images/background1-w640.png 640w, images/background1-w1080.png 1080w, images/background1-w2000.png 2000w" sizes="(max-width: 640px) 640px, (max-width: 1080px) 1080px, (max-width: 2000px) 2000px">
-						<img srcset="images/background2-w640.png 640w, images/background2-w1080.png 1080w, images/background2-w2000.png 2000w" sizes="(max-width: 640px) 640px, (max-width: 1080px) 1080px, (max-width: 2000px) 2000px">
-					</div>
- 				</div>
- 			</div>
- 		</div>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
 
-		<hr id="separator-hr">
+	<!-- My javascript file -->
+	<script type="text/javascript" src="script.js"></script>
 
-		<!-- Main Content area -->
-		<div id="main-content-div">
-			<div class="section">
-				<h1><i class="fas fa-user"></i> About me</h1>
-				<table>
-					<tr>
-						<td class="nowrap-td"><strong>First name:</strong></td>
-						<td><em>Nikolaj Troels</em></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Last name:</strong></td>
-						<td><em>Graf von Malotky</em> (meaning: earl/count of hammer, because <em>Malotky</em> is derived from the word &quot;hammer&quot;)</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Nationality:</strong></td>
-						<td>German</td>
-					<tr>
-						<td class="nowrap-td"><strong>Gender:</strong></td>
-						<td>Male</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Bachelor:</strong></td>
-						<td>Academic title <em>Bachelor of Science</em> in Computer Science at <em>Freie Universität Berlin</em> (a university in the german <em>Excellence Initiative</em>) with the thesis <em>Interaktiver Viewer einer komplexen Datenbankstruktur im Client- Server-System zur Darstellung medizinisch-radiologischer eLearning-Formate im Rahmen einer iPad-Applikation</em> (Interactive viewer of a complex data base structure in a client server system for presenting medical radiological elearning content with an iPad application)</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Master:</strong></td>
-						<td>Academic title <em>Master of Science (M.Sc.)</em> in Computer Science at <em>Freie Universität Berlin</em> (a university in the german <em>Excellence Initiative</em>) with the thesis <em>Formale Semantik der Programmiersprache C - ein praktischer Einstieg</em> (Formal semantics of the programming language C - a practical approach)</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>PHD:</strong></td>
-						<td>Academic title <em>Doktor der Ingenieurwissenschaften (Dr.-Ing. / PHD)</em> in Computer Science at <em>Universität Rostock</em>  with the thesis <em>Generische ITS-Softwarearchitektur und ITS-Prozess</em> (software architecture, software framework, prototype and process of an AI powered teaching software, a full specification of an intelligent tutoring system)</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Family status:</strong></td>
-						<td>Happily married father with a daughter (born 2014, child planning completed)</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Hobbies:</strong></td>
-						<td>Programming, smart home, mechanical keyboards, diving, stand up paddeling</td>
-					</tr>
-				</table>
-			</div>
+	<title>Homepage of Graf von Malotky</title>
+</head>
 
-			<div class="section">
-				<h1><i class="fas fa-envelope"></i> Contact info</h1>
-				<table>
-					<tr>
-						<td class="nowrap-td"><strong>University:</strong></td>
-						<td><a href="https://www.uni-rostock.de"><em>University Rostock</em></a></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Institute:</strong></td>
-						<td><a href="https://www.ief.uni-rostock.de"><em>Faculty of Computer Science and Electrical Engineering</em></a></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Chair:</strong></td>
-						<td><a href="https://wwwpi.informatik.uni-rostock.de/pi_home/"><em>Practical Informatics</em></a></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>E-Mail:</strong></td>
-						<td><a href="mailto:nikolajDOTgrafUNDERSCOREvonUNDERSCOREmalotkyATuniMINUSrostockDOTde">Open compose new mail (replace each uppercase word with the symbol of that name)</a></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Employment:</strong></td>
-						<td><a href="https://pidi.informatik.uni-rostock.de/pi-team/">Scientific researcher (Wissenschaftlicher Mitarbeiter)</a></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Download contact card:</strong></td>
-						<td><a href="contact-card.vcf" download="Graf_von_Malotky.vcf"><i class="fa fa-file"> VCF-file</i></a></td>
-					</tr>
-				</table>
-			</div>
-
-			<div class="section topdiv">
-				<h1><i class="fas fa-tasks"></i> Current University project</h1>
-				<table>
-					<tr>
-						<td class=""><strong>Project name:</strong></td>
-						<td><em>DigiCare</em></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Project description:</strong></td>
-						<td>The project addresses the interactive digitalization of study materials for nursing subjects including a semantic tutoring system and a chatbot-based interactive support</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Project website:</strong></td>
-						<td><a href="https://pidi.informatik.uni-rostock.de/forschung/projekte/digicare/"><em>University Rostock</em> project website</a></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Working tools:</strong></td>
-						<td><em>HTML</em>, <em>CSS</em>, <em>Javascript</em> and <em>Python</em></td>
-					</tr>
-				</table>
-			</div>
-
-			<div class="section">
-				<h1><i class="fas fa-briefcase"></i> Career</h1>
-				<table>
-					<tr>
-						<td class="nowrap-td"><strong>2019 - now:</strong></td>
-						<td>Working as a scientific researcher at the <em>University of Rostock</em> to research, plan, lead and build an ITS for studies in the medical field for <em>DigiCare</em></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2018 - 2019:</strong></td>
-						<td>Worked as a scientific researcher at the <em>University of Rostock</em> to recreate the system for <em>Juniorstudium</em>, where pupils have the opportunity to try out studying</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2018 - 2018:</strong></td>
-						<td>Worked in website development for <em>InKoWi GmbH</em></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2017 - 2018:</strong></td>
-						<td>Worked as a scientific researcher at the <em>University of Rostock</em> on a hyperspectral sports sensor and a bluetooth connected app</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2015 - 2017:</strong></td>
-						<td>Worked as a scientific researcher at the <em>University of Rostock</em> on a hyperspectral wound camera and an expert system</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2014 - 2015:</strong></td>
-						<td>Worked as research assistant at the <em>University of Rostock</em></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2013 - 2014:</strong></td>
-						<td>Worked on different In-House iOS apps for <em>Virtual Data Systems</em></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2013 - 2013:</strong></td>
-						<td>Worked game named <em>Tridom</em> for <em>Play Asia</em> and <em>Artcastle</em> (in Hong Kong</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2012 - 2014:</strong></td>
-						<td>Studied <em>Computer Science</em> at <em>Freie Universität Berlin</em> (Excellence Initiative) and finished it successfully with the masters degree</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2012 - 2012:</strong></td>
-						<td>Worked for a radiologist app named <em>YAILE</em> for <em>Charité – Universitätsmedizin Berlin</em></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2011 - 2012:</strong></td>
-						<td>Worked as an iOS developer at <em>Appiron</em> for various apps</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2010 - 2014:</strong></td>
-						<td>Worked to maintain my selfmade sold app named <em>iPhysikum</em> for <em>MEDI-LEARN</em></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2010 - 2012:</strong></td>
-						<td>Worked as a technical assistant for congresses like the yearly conference of <em>Zentrum für Legasthenie</em></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2010 - 2012:</strong></td>
-						<td>Worked as a student assistant for the eLearning competence department at the <em>Charité – Universitätsmedizin Berlin</em></td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2010 - 2010:</strong></td>
-						<td>Worked as a programming helper at <em>GFP Enders</em> for managing buildings and customers on a map</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2009 - 2010:</strong></td>
-						<td>Been in the study group at the <em>Freie Universität Berlin</em> for the self driving car <em>Spirit of Berlin</em> for automatic parking and pathfinding</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2008 - 2009:</strong></td>
-						<td>Been in the study group at the <em>Freie Universität Berlin</em> for the soccer playing robots <em>FUmanoids</em> with pattern recognition and hardware programming</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2008 - 2009:</strong></td>
-						<td>Been in the study group at the <em>Freie Universität Berlin</em> for research and recreation of the bee dance with <em>RoboBiene</em> with pattern recognition and machine learning</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2006 - 2012:</strong></td>
-						<td>Studied <em>Computer Science</em> at <em>Freie Universität Berlin</em> (Excellence Initiative) and finished it successfully with the bachelor degree</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2003 - 2006:</strong></td>
-						<td>Finished school with <em>Allgemeinen Hochschulreife</em> at <em>Sophie-Charlotte-Oberschule</em> (<em>Gymnasium</em>)</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2002 - 2009:</strong></td>
-						<td>Employee in a hardware store, repaired computers and did on-site technical support</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>2000 - 2003:</strong></td>
-						<td>Was in school at <em>Georg-von-Giesche-Oberschule</em> (<em>Realschule</em>)</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>1998 - 2000:</strong></td>
-						<td>Worked as a newspaper deliverer in Denmark</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>- 2000:</strong></td>
-						<td>Was in school at <em>Svanescolen</em> in <em>Væggerløse</em> in Denmark</td>
-					</tr>
-				</table>
-			</div>
-
-		<div class="section">
-				<h1><i class="fas fa-book"></i> Publications</h1>
-				<table>
-					<tr>
-						<td><strong>18th International Conference Cognition and Exploratory Learning in the Digital Age (CELDA): </strong>Implement adaptation in a case based ITS</td>
-					</tr>
-					<tr>
-						<td>Workshop organizer for <strong>13th ACM International Conference on PErvasive Technologies Related to Assistive Environments (PETRA): </strong>Workshop W3: DigiTAI – The 1st International Workshop on Digital Health Systems for the Aging Population</td>
-					</tr>
-					<tr>
-						<td><strong>16th International Conference on Intelligent Tutoring Systems (ITS), Springer: </strong>General ITS software architecture and framework</td>
-					</tr>
-					<tr>
-						<td><strong>18. Fachtagung Bildungstechnologien (DELFI), Lecture Notes in Informatics (LNI): </strong>DigiCare - Ein intelligentes Lehr-/Lernsystem für Gesundheitsberufe</td>
-					</tr>
-					<tr>
-						<td><strong>11th international conference on education and new learning technologies (EDULEARN): </strong>A comparable foundation for ITS research loop and subfields</td>
-					</tr>
-					<tr>
-						<td><strong>11th international conference on education and new learning technologies (EDULEARN): </strong>The implications of ITS research on CALL software</td>
-					</tr>
-					<tr>
-						<td><strong>15th international conference on intelligent tutoring systems (ITS): </strong>Analyzing the usage of the classical ITS software architecture and refining it</td>
-					</tr>
-					<tr>
-						<td><strong>12th international symposium on computer science in sport (IACSS): </strong>Train4U - Mobile Sport Diagnostic Expert System for User-Adaptive Training</td>
-					</tr>
-					<tr>
-						<td><strong>19th International Conference on Advanced Learning Technologies (ICALT): </strong>Centralizing the Teaching Process in Intelligent Tutoring System Architectures</td>
-					</tr>
-					<tr>
-						<td><strong>9th annual international conference on education and new learning technologies (EDULEARN): </strong>Synthesis of pedagogical annotations</td>
-					</tr>
-					<tr>
-						<td><strong>9th International Conference on Computer Supported Education (CSEDU): </strong>Autonomous semantic structuring of lecture topics Synthesis of knowledge models</td>
-					</tr>
-					<tr>
-						<td><strong>62. Jahrestagung Deutsche Gesellschaft für Medizinische Informatik, Biometrie und Epidemiologie (GMDS): </strong>Hyperspectral Wound Diagnostic – Analysis of Clinical Practice and Diagnosis Support</td>
-					</tr>
-					<tr>
-						<td><strong>Biomedical Engineering / Biomedizinische Technik (BMT): </strong>Bringing Hyperspectral Imaging into Clinical Practice with Computer Science Methods</td>
-					</tr>
-					<tr>
-						<td><strong>Jahrestagung der BIOMEDIZINISCHEN TECHNIK und Dreiländertagung der MEDIZINISCHEN PHYSIK (BMTMedPhys): </strong>Hyperspectral imaging and clinical practice – approach to integrate a new diagnostic tool</td>
-					</tr>
-					<tr>
-						<td><strong>Symposium Hyperspektrale Bildgebung in der Medizin (HSI): </strong>Integration neuer diagnostischer Verfahren in den klinischen Alltag</td>
-					</tr>
-					<tr>
-						<td><strong>University Rostock Forschungscamp (forschungscamp2017): </strong>Hyperspectral imaging and clinical practice – approach to integrate a new diagnostic tool</td>
-					</tr>
-					<tr>
-						<td><strong>13th International Conference Cognition and Exploratory Learning in the Digital Age (CELDA): </strong>Framework for intelligent teaching and training systems - a study of systems</td>
-					</tr>
-				</table>
-			</div>
-
-			<div class="section">
-				<h1><i class="fas fa-laptop"></i> Skills</h1>
-				<table>
-					<tr>
-						<td class="nowrap-td"><strong>Abstraction:</strong></td>
-						<td>Management, Architecture design, Process design, Project Management, SCRUM</td>
-					</tr>						
-					<tr>
-						<td class="nowrap-td"><strong>Programming languages:</strong></td>
-						<td>Swift, ZShell, Bash, JavaScript, Kotlin, C, C++, C#, Objective-C, Python, PHP</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Markup languages:</strong></td>
-						<td>HTML, CSS, JSON, XML, CommonMark, Markdown</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>IDEs:</strong></td>
-						<td>Visual Studio, Visual Studio Code, Xcode, WebStorm, Android Studio, PyCharm</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>OSs:</strong></td>
-						<td>macOS, Windows, Ubuntu, iOS, Android, Microcontroller</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Databases:</strong></td>
-						<td>SQLite, MongoDB, PostgreSQL, Custom binaries</td>
-					</tr>
-					<tr>
-						<td class="nowrap-td"><strong>Other:</strong></td>
-						<td>Microsoft Office, iWork, Latex, Regex, UML, BPMN, Git, CMake, Docker, VMware</td>
-					</tr>
-				</table>
+<body onload="initializeWebsite()">
+	<!-- Header area -->
+	<div id="header-div">
+		<div id="center">
+			<img id="logo" src="images/emblem-white.png" alt="Stylized family emblem">
+			<h1 id="name-h1">Graf von Malotky</h1>
+			<div id="scroll-down-div" class="fade-in" onclick="scrollToMainContent()">
+				<i class="fas fa-angle-down"></i>
 			</div>
 		</div>
+		<div id="carousel-div">
+			<img srcset="images/background1-w640.png 640w, images/background1-w1080.png 1080w, images/background1-w2000.png 2000w" sizes="(max-width: 640px) 640px, (max-width: 1080px) 1080px, (max-width: 2000px) 2000px">
+			<img srcset="images/background2-w640.png 640w, images/background2-w1080.png 1080w, images/background2-w2000.png 2000w" sizes="(max-width: 640px) 640px, (max-width: 1080px) 1080px, (max-width: 2000px) 2000px">
+		</div>
+	</div>
+	
+	<!-- Main Content area -->
+	<div id="main-content-div">
+		<div class="section">
+			<h1><i class="fas fa-user"></i> About me</h1>
+			<table>
+				<tr>
+					<td class="nowrap-td"><strong>First name:</strong></td>
+					<td><em>Nikolaj Troels</em></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Last name:</strong></td>
+					<td><em>Graf von Malotky</em> (meaning: earl/count of hammer, because <em>Malotky</em> is derived from the word &quot;hammer&quot;)</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Nationality:</strong></td>
+					<td>German</td>
+				<tr>
+					<td class="nowrap-td"><strong>Gender:</strong></td>
+					<td>Male</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Bachelor:</strong></td>
+					<td>Academic title <em>Bachelor of Science</em> in Computer Science at <em>Freie Universität Berlin</em> (a university in the german <em>Excellence Initiative</em>) with the thesis <em>Interaktiver Viewer einer komplexen Datenbankstruktur im Client- Server-System zur Darstellung medizinisch-radiologischer eLearning-Formate im Rahmen einer iPad-Applikation</em> (Interactive viewer of a complex data base structure in a client server system for presenting medical radiological elearning content with an iPad application)</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Master:</strong></td>
+					<td>Academic title <em>Master of Science (M.Sc.)</em> in Computer Science at <em>Freie Universität Berlin</em> (a university in the german <em>Excellence Initiative</em>) with the thesis <em>Formale Semantik der Programmiersprache C - ein praktischer Einstieg</em> (Formal semantics of the programming language C - a practical approach)</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>PHD:</strong></td>
+					<td>Academic title <em>Doktor der Ingenieurwissenschaften (Dr.-Ing. / PHD)</em> in Computer Science at <em>Universität Rostock</em> with the thesis <em>Generische ITS-Softwarearchitektur und ITS-Prozess</em> (software architecture, software framework, prototype and process of an AI powered teaching software, a full specification of an intelligent tutoring system)</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Family status:</strong></td>
+					<td>Happily married father with a daughter (born 2014, child planning completed)</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Hobbies:</strong></td>
+					<td>Programming, smart home, mechanical keyboards, diving, stand up paddeling</td>
+				</tr>
+			</table>
+		</div>
 
-		<!-- Footer area -->
-		<div id="footer-div">Website last updated on 18th November 2021</div>
-	</body>
+		<div class="section">
+			<h1><i class="fas fa-envelope"></i> Contact info</h1>
+			<table>
+				<tr>
+					<td class="nowrap-td"><strong>University:</strong></td>
+					<td><a href="https://www.uni-rostock.de"><em>University Rostock</em></a></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Institute:</strong></td>
+					<td><a href="https://www.ief.uni-rostock.de"><em>Faculty of Computer Science and Electrical Engineering</em></a></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Chair:</strong></td>
+					<td><a href="https://wwwpi.informatik.uni-rostock.de/pi_home/"><em>Practical Informatics</em></a></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>E-Mail:</strong></td>
+					<td><a href="mailto:nikolajDOTgrafUNDERSCOREvonUNDERSCOREmalotkyATuniMINUSrostockDOTde">Open compose new mail (replace each uppercase word with the symbol of that name)</a></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Employment:</strong></td>
+					<td><a href="https://pidi.informatik.uni-rostock.de/pi-team/">Scientific researcher (Wissenschaftlicher Mitarbeiter)</a></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Download contact card:</strong></td>
+					<td><a href="contact-card.vcf" download="Graf_von_Malotky.vcf"><i class="fa fa-file"> VCF-file</i></a></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="section topdiv">
+			<h1><i class="fas fa-tasks"></i> Current University project</h1>
+			<table>
+				<tr>
+					<td class=""><strong>Project name:</strong></td>
+					<td><em>DigiCare</em></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Project description:</strong></td>
+					<td>The project addresses the interactive digitalization of study materials for nursing subjects including a semantic tutoring system and a chatbot-based interactive support</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Project website:</strong></td>
+					<td><a href="https://pidi.informatik.uni-rostock.de/forschung/projekte/digicare/"><em>University Rostock</em> project website</a></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Working tools:</strong></td>
+					<td><em>HTML</em>, <em>CSS</em>, <em>Javascript</em> and <em>Python</em></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="section">
+			<h1><i class="fas fa-briefcase"></i> Career</h1>
+			<table>
+				<tr>
+					<td class="nowrap-td"><strong>2019 - now:</strong></td>
+					<td>Working as a scientific researcher at the <em>University of Rostock</em> to research, plan, lead and build an ITS for studies in the medical field for <em>DigiCare</em></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2018 - 2019:</strong></td>
+					<td>Worked as a scientific researcher at the <em>University of Rostock</em> to recreate the system for <em>Juniorstudium</em>, where pupils have the opportunity to try out studying</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2018 - 2018:</strong></td>
+					<td>Worked in website development for <em>InKoWi GmbH</em></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2017 - 2018:</strong></td>
+					<td>Worked as a scientific researcher at the <em>University of Rostock</em> on a hyperspectral sports sensor and a bluetooth connected app</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2015 - 2017:</strong></td>
+					<td>Worked as a scientific researcher at the <em>University of Rostock</em> on a hyperspectral wound camera and an expert system</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2014 - 2015:</strong></td>
+					<td>Worked as research assistant at the <em>University of Rostock</em></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2013 - 2014:</strong></td>
+					<td>Worked on different In-House iOS apps for <em>Virtual Data Systems</em></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2013 - 2013:</strong></td>
+					<td>Worked game named <em>Tridom</em> for <em>Play Asia</em> and <em>Artcastle</em> (in Hong Kong</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2012 - 2014:</strong></td>
+					<td>Studied <em>Computer Science</em> at <em>Freie Universität Berlin</em> (Excellence Initiative) and finished it successfully with the masters degree</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2012 - 2012:</strong></td>
+					<td>Worked for a radiologist app named <em>YAILE</em> for <em>Charité – Universitätsmedizin Berlin</em></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2011 - 2012:</strong></td>
+					<td>Worked as an iOS developer at <em>Appiron</em> for various apps</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2010 - 2014:</strong></td>
+					<td>Worked to maintain my selfmade sold app named <em>iPhysikum</em> for <em>MEDI-LEARN</em></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2010 - 2012:</strong></td>
+					<td>Worked as a technical assistant for congresses like the yearly conference of <em>Zentrum für Legasthenie</em></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2010 - 2012:</strong></td>
+					<td>Worked as a student assistant for the eLearning competence department at the <em>Charité – Universitätsmedizin Berlin</em></td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2010 - 2010:</strong></td>
+					<td>Worked as a programming helper at <em>GFP Enders</em> for managing buildings and customers on a map</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2009 - 2010:</strong></td>
+					<td>Been in the study group at the <em>Freie Universität Berlin</em> for the self driving car <em>Spirit of Berlin</em> for automatic parking and pathfinding</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2008 - 2009:</strong></td>
+					<td>Been in the study group at the <em>Freie Universität Berlin</em> for the soccer playing robots <em>FUmanoids</em> with pattern recognition and hardware programming</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2008 - 2009:</strong></td>
+					<td>Been in the study group at the <em>Freie Universität Berlin</em> for research and recreation of the bee dance with <em>RoboBiene</em> with pattern recognition and machine learning</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2006 - 2012:</strong></td>
+					<td>Studied <em>Computer Science</em> at <em>Freie Universität Berlin</em> (Excellence Initiative) and finished it successfully with the bachelor degree</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2003 - 2006:</strong></td>
+					<td>Finished school with <em>Allgemeinen Hochschulreife</em> at <em>Sophie-Charlotte-Oberschule</em> (<em>Gymnasium</em>)</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2002 - 2009:</strong></td>
+					<td>Employee in a hardware store, repaired computers and did on-site technical support</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>2000 - 2003:</strong></td>
+					<td>Was in school at <em>Georg-von-Giesche-Oberschule</em> (<em>Realschule</em>)</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>1998 - 2000:</strong></td>
+					<td>Worked as a newspaper deliverer in Denmark</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>- 2000:</strong></td>
+					<td>Was in school at <em>Svanescolen</em> in <em>Væggerløse</em> in Denmark</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="section">
+			<h1><i class="fas fa-book"></i> Publications</h1>
+			<table>
+				<tr>
+					<td><strong>18th International Conference Cognition and Exploratory Learning in the Digital Age (CELDA): </strong>Implement adaptation in a case based ITS</td>
+				</tr>
+				<tr>
+					<td>Workshop organizer for <strong>13th ACM International Conference on PErvasive Technologies Related to Assistive Environments (PETRA): </strong>Workshop W3: DigiTAI – The 1st International Workshop on Digital Health Systems for the Aging Population</td>
+				</tr>
+				<tr>
+					<td><strong>16th International Conference on Intelligent Tutoring Systems (ITS), Springer: </strong>General ITS software architecture and framework</td>
+				</tr>
+				<tr>
+					<td><strong>18. Fachtagung Bildungstechnologien (DELFI), Lecture Notes in Informatics (LNI): </strong>DigiCare - Ein intelligentes Lehr-/Lernsystem für Gesundheitsberufe</td>
+				</tr>
+				<tr>
+					<td><strong>11th international conference on education and new learning technologies (EDULEARN): </strong>A comparable foundation for ITS research loop and subfields</td>
+				</tr>
+				<tr>
+					<td><strong>11th international conference on education and new learning technologies (EDULEARN): </strong>The implications of ITS research on CALL software</td>
+				</tr>
+				<tr>
+					<td><strong>15th international conference on intelligent tutoring systems (ITS): </strong>Analyzing the usage of the classical ITS software architecture and refining it</td>
+				</tr>
+				<tr>
+					<td><strong>12th international symposium on computer science in sport (IACSS): </strong>Train4U - Mobile Sport Diagnostic Expert System for User-Adaptive Training</td>
+				</tr>
+				<tr>
+					<td><strong>19th International Conference on Advanced Learning Technologies (ICALT): </strong>Centralizing the Teaching Process in Intelligent Tutoring System Architectures</td>
+				</tr>
+				<tr>
+					<td><strong>9th annual international conference on education and new learning technologies (EDULEARN): </strong>Synthesis of pedagogical annotations</td>
+				</tr>
+				<tr>
+					<td><strong>9th International Conference on Computer Supported Education (CSEDU): </strong>Autonomous semantic structuring of lecture topics Synthesis of knowledge models</td>
+				</tr>
+				<tr>
+					<td><strong>62. Jahrestagung Deutsche Gesellschaft für Medizinische Informatik, Biometrie und Epidemiologie (GMDS): </strong>Hyperspectral Wound Diagnostic – Analysis of Clinical Practice and Diagnosis Support</td>
+				</tr>
+				<tr>
+					<td><strong>Biomedical Engineering / Biomedizinische Technik (BMT): </strong>Bringing Hyperspectral Imaging into Clinical Practice with Computer Science Methods</td>
+				</tr>
+				<tr>
+					<td><strong>Jahrestagung der BIOMEDIZINISCHEN TECHNIK und Dreiländertagung der MEDIZINISCHEN PHYSIK (BMTMedPhys): </strong>Hyperspectral imaging and clinical practice – approach to integrate a new diagnostic tool</td>
+				</tr>
+				<tr>
+					<td><strong>Symposium Hyperspektrale Bildgebung in der Medizin (HSI): </strong>Integration neuer diagnostischer Verfahren in den klinischen Alltag</td>
+				</tr>
+				<tr>
+					<td><strong>University Rostock Forschungscamp (forschungscamp2017): </strong>Hyperspectral imaging and clinical practice – approach to integrate a new diagnostic tool</td>
+				</tr>
+				<tr>
+					<td><strong>13th International Conference Cognition and Exploratory Learning in the Digital Age (CELDA): </strong>Framework for intelligent teaching and training systems - a study of systems</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="section">
+			<h1><i class="fas fa-laptop"></i> Skills</h1>
+			<table>
+				<tr>
+					<td class="nowrap-td"><strong>Abstraction:</strong></td>
+					<td>Management, Architecture design, Process design, Project Management, SCRUM</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Programming languages:</strong></td>
+					<td>Swift, ZShell, Bash, JavaScript, Kotlin, C, C++, C#, Objective-C, Python, PHP</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Markup languages:</strong></td>
+					<td>HTML, CSS, JSON, XML, CommonMark, Markdown</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>IDEs:</strong></td>
+					<td>Visual Studio, Visual Studio Code, Xcode, WebStorm, Android Studio, PyCharm</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>OSs:</strong></td>
+					<td>macOS, Windows, Ubuntu, iOS, Android, Microcontroller</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Databases:</strong></td>
+					<td>SQLite, MongoDB, PostgreSQL, Custom binaries</td>
+				</tr>
+				<tr>
+					<td class="nowrap-td"><strong>Other:</strong></td>
+					<td>Microsoft Office, iWork, Latex, Regex, UML, BPMN, Git, CMake, Docker, VMware</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<!-- Footer area -->
+	<div id="footer-div">Website last updated on 18th November 2021</div>
+</body>
+
 </html>
