@@ -117,9 +117,12 @@
 	box-shadow: 0px 6px 6px 0px rgba(255, 255, 255, 0.25);
 }
 
-.nowrap-td {
-	white-space: nowrap;
-	vertical-align: text-top;
+.left {
+	width: 25%;
+}
+
+.right {
+	width: 75%;
 }
 
 /* ELEMENT SELECTORS */
@@ -152,8 +155,16 @@ h1 {
 	line-height: 5vh;
 }
 
+table {
+	table-layout: fixed;
+	width: 100%;
+	word-wrap: break-all;
+}
+
 td {
 	padding-bottom: 2vh;
+	word-wrap: break-word;
+	vertical-align: text-top;
 }
 
 /* QUERIES */
