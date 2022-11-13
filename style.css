@@ -108,6 +108,18 @@
 	text-align: center;
 }
 
+#languagediv {
+	text-align: center;
+	padding-top: 0.5vh;
+}
+
+#languagebutton {
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 2vh;
+	border-radius: 10px;
+}
+
 /* CLASS SELECTORS */
 
 .section {
@@ -123,6 +135,10 @@
 
 .right {
 	width: 75%;
+}
+
+.half {
+	width: 50%;
 }
 
 /* ELEMENT SELECTORS */
@@ -158,7 +174,6 @@ h1 {
 table {
 	table-layout: fixed;
 	width: 100%;
-	word-wrap: break-all;
 }
 
 td {
