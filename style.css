@@ -24,7 +24,7 @@
 #name-h1 {
 	position: relative;
 	font-size: 5vh;
-	line-height: 2vh;
+	line-height: 1.0;
 	letter-spacing: 0.2vw;
 	color: #eeeeee;
 	animation:fade-in-from-bottom-move 1s ease-out forwards;
